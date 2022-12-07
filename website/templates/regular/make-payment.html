@@ -1,0 +1,40 @@
+{% extends 'dashboard.html' %}
+{% block mainbody %}
+<section class="section">
+    <div class="row">
+        
+    </div>
+</section>
+
+<style>
+    .card {
+        align: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px #ccc;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            scrollY: '50vh',
+            scrollCollapse: true,
+        });
+    });
+</script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://tanjimreza.me/cdn/assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endblock mainbody %}
